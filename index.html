@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Frost Island RP</title>
 
     <link rel="stylesheet" href="style.css">
@@ -14,29 +15,1576 @@
 <header>
     <h1>❄ Frost Island RP</h1>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Regelwerk</a>
-        <a href="#">Fraktionen</a>
-        <a href="#">Team</a>
-        <a href="#">Discord</a>
-    </nav>
+   <nav>
+    <a href="#home" data-page="home" class="active">
+        Home
+    </a>
+
+    <a href="#regelwerk" data-page="regelwerk">
+        Regelwerk
+    </a>
+
+    <a href="#fraktionsregelwerk" data-page="fraktionsregelwerk">
+        Fraktionsregelwerk
+    </a>
+
+    <a href="#serverinhaber" data-page="serverinhaber">
+    Serverinhaber
+</a>
+
+    <a href="https://discord.gg/vkEqrnyePR"
+       target="_blank"
+       rel="noopener noreferrer">
+        Discord
+    </a>
+</nav>
 </header>
+<main>
+    <!-- Startseite -->
+    <section id="home" class="page-section hero">
+        <h2>Willkommen auf Frost Island RP</h2>
 
-<section class="hero">
-    <h2>Willkommen auf Frost Island RP</h2>
+        <p>
+            Tauche ein in eine einzigartige GTA V Roleplay Welt voller Abenteuer,
+            spannender Geschichten und einer starken Community.
+        </p>
 
-    <p>
-        Tauche ein in eine einzigartige GTA V Roleplay Welt voller Abenteuer,
-        spannender Geschichten und einer starken Community.
-    </p>
+        <div class="buttons">
+            <a href="https://discord.gg/vkEqrnyePR"
+               target="_blank"
+               rel="noopener noreferrer">
+                Discord
+            </a>
 
-    <div class="buttons">
-        <a href="https://discord.gg/DEINLINK" target="_blank">Discord</a>
-        <a href="https://twitch.tv/DEINLINK" target="_blank">Twitch</a>
+            <a href="https://www.twitch.tv/brainbruce"
+               target="_blank"
+               rel="noopener noreferrer">
+                Twitch
+            </a>
+        </div>
+    </section>
+    <!-- Regelwerk -->
+    <section id="regelwerk" class="page-section regelwerk" hidden>
+    <div class="regelwerk-container">
+
+        <!-- Kapitelübersicht -->
+        <div id="regel-auswahl" class="regel-ansicht">
+            <h2>Regelwerk</h2>
+
+            <p class="regelwerk-intro">
+                Wähle ein Kapitel aus. Mit dem Betreten des Servers akzeptierst
+                du das aktuelle Regelwerk von Frost Island RP.
+            </p>
+
+            <div class="regel-auswahl-grid">
+
+                <button
+                    type="button"
+                    class="regel-kategorie"
+                    data-rule-target="community"
+                >
+                    <span class="regel-nummer">§1</span>
+                    <h3>Community und Grundlagen</h3>
+                    <p>Zugang, Verhalten, Mikrofon, Accounts und Fairness.</p>
+                </button>
+
+                <button
+                    type="button"
+                    class="regel-kategorie"
+                    data-rule-target="roleplay"
+                >
+                    <span class="regel-nummer">§2</span>
+                    <h3>Roleplay-Regeln</h3>
+                    <p>Grundlagen für glaubwürdiges und faires Roleplay.</p>
+                </button>
+
+                <button
+                    type="button"
+                    class="regel-kategorie"
+                    data-rule-target="crime"
+                >
+                    <span class="regel-nummer">§3</span>
+                    <h3>Crime und Konflikte</h3>
+                    <p>Überfälle, Geiseln, Safezones und illegale Routen.</p>
+                </button>
+
+                <button
+                    type="button"
+                    class="regel-kategorie"
+                    data-rule-target="fahrzeuge"
+                >
+                    <span class="regel-nummer">§4</span>
+                    <h3>Fahrzeuge und Verfolgungen</h3>
+                    <p>Fahrverhalten, Unfälle, PIT-Manöver und Garagen.</p>
+                </button>
+
+                <button
+                    type="button"
+                    class="regel-kategorie"
+                    data-rule-target="fraktionen"
+                >
+                    <span class="regel-nummer">§5</span>
+                    <h3>Fraktionen und Berufe</h3>
+                    <p>Gruppengrößen, Angriffe, Kleidung und Rettungskräfte.</p>
+                </button>
+
+                <button
+                    type="button"
+                    class="regel-kategorie"
+                    data-rule-target="support"
+                >
+                    <span class="regel-nummer">§6</span>
+                    <h3>Support und Technik</h3>
+                    <p>Supportfälle, Beweise, Sanktionen, Mods und Erstattungen.</p>
+                </button>
+
+            </div>
+        </div>
+
+        <!-- §1 Community und Grundlagen -->
+        <div
+            id="regel-community"
+            class="regel-ansicht regel-detail"
+            hidden
+        >
+            <button type="button" class="zurueck-button" data-rule-back>
+                ← Zurück zur Auswahl
+            </button>
+
+            <article class="regel-card regel-detail-card">
+                <h3>§1 Community und Grundlagen</h3>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§1.1 Geltungsbereich</h4>
+                    <p>
+                        Das Regelwerk gilt für alle Spieler, Charaktere und
+                        Plattformen von Frost Island RP. Mit dem Betreten des
+                        Servers bestätigt jeder Spieler, die Regeln gelesen und
+                        verstanden zu haben.
+                    </p>
+                    <p>
+                        Unwissenheit schützt nicht vor einer Sanktion. Änderungen
+                        am Regelwerk können jederzeit vorgenommen und über die
+                        offiziellen Kanäle angekündigt werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§1.2 Mindestalter und geistige Reife</h4>
+                    <p>
+                        Frost Island RP richtet sich grundsätzlich an Spieler ab
+                        18 Jahren. Das Erreichen des 18. Lebensjahres garantiert
+                        jedoch keine Aufnahme oder dauerhafte Teilnahme.
+                    </p>
+                    <p>
+                        Bei erkennbar ausreichender geistiger Reife kann das
+                        Serverteam Ausnahmen zulassen. Die endgültige Entscheidung
+                        liegt beim zuständigen Team.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§1.3 Open-Phase und Whitelist</h4>
+                    <p>
+                        Während der angekündigten Open-Phase ist keine Whitelist
+                        erforderlich. Die Serverleitung kann später ein
+                        Whitelist-Verfahren einführen.
+                    </p>
+                    <p>
+                        Auch während der Open-Phase besteht kein Anspruch auf
+                        Zugang zum Server.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§1.4 Mikrofon und Sprachqualität</h4>
+                    <p>
+                        Ein funktionierendes und verständliches Mikrofon ist
+                        verpflichtend. Dauerhaftes Rauschen, extreme
+                        Hintergrundgeräusche und absichtliches Stören des
+                        Sprachchats sind nicht erlaubt.
+                    </p>
+                    <p>
+                        Soundboards und Stimmenverzerrer dürfen den Spielspaß
+                        anderer nicht beeinträchtigen. Das Team kann ihre Nutzung
+                        jederzeit untersagen.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§1.5 Respektvolles Verhalten</h4>
+                    <p>
+                        Alle Spieler und Teammitglieder sind respektvoll zu
+                        behandeln. Rassismus, Sexismus, Hassrede, Diskriminierung,
+                        Mobbing, persönliche Drohungen und menschenverachtende
+                        Inhalte sind strengstens verboten.
+                    </p>
+                    <p>
+                        Roleplay ist keine Rechtfertigung für extreme OOC-Angriffe
+                        oder gezielte persönliche Erniedrigung.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§1.6 Namen und Charaktere</h4>
+                    <p>
+                        Charaktere benötigen einen glaubwürdigen Vor- und
+                        Nachnamen. Trollnamen, beleidigende Namen sowie Namen
+                        bekannter realer oder fiktiver Personen sind nicht erlaubt.
+                    </p>
+                    <p>
+                        Jeder Charakter sollte eine nachvollziehbare Persönlichkeit
+                        und Geschichte besitzen.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§1.7 Accounts und Bannumgehung</h4>
+                    <p>
+                        Jeder Spieler ist für alle Handlungen seines Accounts
+                        verantwortlich. Accountsharing ist verboten.
+                    </p>
+                    <p>
+                        Das Umgehen einer Sanktion durch weitere Accounts,
+                        Identitäten oder technische Hilfsmittel führt zu einer
+                        Verschärfung der Sanktion.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§1.8 Werbung und persönliche Daten</h4>
+                    <p>
+                        Werbung für andere Server, Communities oder Projekte ist
+                        ohne Genehmigung der Serverleitung verboten.
+                    </p>
+                    <p>
+                        Private Daten anderer Personen dürfen nicht veröffentlicht,
+                        gesammelt oder ohne Zustimmung weitergegeben werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§1.9 Trolling und AFK</h4>
+                    <p>
+                        Absichtliches Stören, grundloses Provozieren und gezieltes
+                        Zerstören des Spielspaßes sind verboten.
+                    </p>
+                    <p>
+                        Während laufender Situationen darf man nicht unangekündigt
+                        AFK gehen. Wer länger abwesend ist, muss sich an einem
+                        geeigneten Ort außerhalb aktiver Situationen befinden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§1.10 Grauzonen und gesunder Menschenverstand</h4>
+                    <p>
+                        Das bewusste Ausnutzen von Regellücken oder unklaren
+                        Formulierungen ist verboten. Nicht jede mögliche Handlung
+                        kann einzeln im Regelwerk beschrieben werden.
+                    </p>
+                    <p>
+                        Im Zweifel gelten Fairness, gesundes Urteilsvermögen und
+                        der Schutz eines hochwertigen Roleplays.
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <!-- §2 Roleplay-Regeln -->
+        <div
+            id="regel-roleplay"
+            class="regel-ansicht regel-detail"
+            hidden
+        >
+            <button type="button" class="zurueck-button" data-rule-back>
+                ← Zurück zur Auswahl
+            </button>
+
+            <article class="regel-card regel-detail-card">
+                <h3>§2 Roleplay-Regeln</h3>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§2.1 In Character und Out of Character</h4>
+                    <p>
+                        Während des Roleplays wird ausschließlich aus Sicht des
+                        eigenen Charakters gehandelt und gesprochen. OOC-Themen
+                        wie Server, Support, Discord oder Regelwerk gehören nicht
+                        in eine laufende RP-Situation.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§2.2 Charaktertreue</h4>
+                    <p>
+                        Entscheidungen müssen zur Persönlichkeit, Geschichte und
+                        aktuellen Situation des Charakters passen. Plötzliche
+                        Verhaltensänderungen zum Erlangen eines Vorteils gelten
+                        als schlechtes Roleplay.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§2.3 Schütze dein Leben</h4>
+                    <p>
+                        Das eigene Leben ist das höchste Gut. Ein Charakter darf
+                        sein Leben nicht sinnlos gefährden.
+                    </p>
+                    <p>
+                        Wird man glaubwürdig mit einer Waffe bedroht, muss man
+                        angemessen reagieren und darf nicht ohne realistische
+                        Möglichkeit eine eigene Waffe ziehen.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§2.4 Fail-RP</h4>
+                    <p>
+                        Unrealistische oder nicht nachvollziehbare Handlungen
+                        gelten als Fail-RP. Dazu zählen beispielsweise das
+                        Ignorieren schwerer Verletzungen, das Sprechen während
+                        der Bewusstlosigkeit oder die Nutzung stark zerstörter
+                        Fahrzeuge.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§2.5 Power-RP</h4>
+                    <p>
+                        Andere Spieler dürfen nicht zu Handlungen gezwungen
+                        werden, ohne ihnen eine faire und realistische
+                        Reaktionsmöglichkeit zu geben.
+                    </p>
+                    <p>
+                        Unausweichliche Handlungen, die der Gegenpartei jede
+                        Überlebens- oder Handlungschance nehmen, sind verboten.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§2.6 Metagaming und Stream-Sniping</h4>
+                    <p>
+                        Informationen aus Discord, Streams, Chats oder anderen
+                        Quellen außerhalb des Spiels dürfen nicht im Roleplay
+                        verwendet werden.
+                    </p>
+                    <p>
+                        Das Auffinden, Beobachten oder Verfolgen eines Spielers
+                        mithilfe eines Livestreams ist verboten.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§2.7 RDM und VDM</h4>
+                    <p>
+                        Das grundlose Töten oder Verletzen eines Spielers ohne
+                        nachvollziehbaren RP-Hintergrund ist RDM und verboten.
+                    </p>
+                    <p>
+                        Fahrzeuge dürfen nicht ohne berechtigten RP-Grund als
+                        Waffe gegen Personen verwendet werden. Dies gilt als VDM.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§2.8 Schussankündigung</h4>
+                    <p>
+                        Vor dem Einsatz einer Schusswaffe ist grundsätzlich eine
+                        klare und verständliche Schussankündigung erforderlich.
+                    </p>
+                    <ul>
+                        <li>Die Ankündigung muss von der Gegenpartei wahrgenommen werden können.</li>
+                        <li>Es müssen mindestens 3 Sekunden Reaktionszeit gewährt werden.</li>
+                        <li>Eine Schussankündigung bleibt 15 Minuten gültig.</li>
+                        <li>Schusswaffen sind immer das letzte Mittel.</li>
+                    </ul>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§2.9 Combat-Logging und RP-Flucht</h4>
+                    <p>
+                        Das Verlassen des Servers während einer laufenden
+                        Situation ist verboten.
+                    </p>
+                    <p>
+                        Auch die Flucht in Garagen, Menüs, Innenräume, Safezones
+                        oder technische Funktionen, um eine Situation zu
+                        beenden, gilt als RP-Flucht.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§2.10 New-Life-Regel</h4>
+                    <p>
+                        Nach dem Ausbluten vergisst der Charakter den direkten
+                        RP-Strang, der zu seinem Tod geführt hat.
+                    </p>
+                    <p>
+                        Er darf für mindestens 30 Minuten und bis zum vollständigen
+                        Ende der Situation weder an den Ort zurückkehren noch
+                        erneut in den Konflikt eingreifen.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§2.11 Bewusstlosigkeit und Wiederbelebung</h4>
+                    <p>
+                        Während der Bewusstlosigkeit darf nicht gesprochen,
+                        gefunkt oder kommuniziert werden.
+                    </p>
+                    <p>
+                        Nach einer Wiederbelebung erinnert sich der Charakter an
+                        alles bis zum Zeitpunkt der Bewusstlosigkeit. Ereignisse
+                        und Gespräche während der Bewusstlosigkeit dürfen nicht
+                        erinnert werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§2.12 Verletzungen und Medic-RP</h4>
+                    <p>
+                        Verletzungen müssen glaubwürdig ausgespielt werden.
+                        Anweisungen des Rettungsdienstes sind im Rahmen des
+                        Roleplays zu beachten.
+                    </p>
+                    <p>
+                        Schwere Unfälle, Schussverletzungen und Stürze dürfen
+                        nicht ignoriert werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§2.13 Maskierungen</h4>
+                    <p>
+                        Vollständig maskierte Personen dürfen nicht allein an
+                        ihrer Stimme erkannt werden. Eine Erkennung benötigt
+                        weitere eindeutige Hinweise aus dem Roleplay.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§2.14 Kommunikationsmittel</h4>
+                    <p>
+                        Informationen dürfen nur über im Spiel vorhandene und
+                        realistisch nutzbare Kommunikationsmittel weitergegeben
+                        werden.
+                    </p>
+                    <p>
+                        Wer gefesselt, bewusstlos oder anderweitig handlungsunfähig
+                        ist, darf kein Telefon oder Funkgerät benutzen.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§2.15 Drittparteien</h4>
+                    <p>
+                        Unbeteiligte Parteien dürfen sich nicht in einen
+                        bestehenden Konflikt einmischen. Ausnahmen müssen vorab
+                        in einem offiziellen Fraktionsgespräch geklärt und
+                        genehmigt werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§2.16 Cop- und Gang-Baiting</h4>
+                    <p>
+                        Das grundlose Provozieren von Polizei, Rettungskräften
+                        oder Fraktionen mit dem Ziel, eine Verfolgung oder
+                        Schießerei zu erzwingen, ist verboten.
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <!-- §3 Crime und Konflikte -->
+        <div
+            id="regel-crime"
+            class="regel-ansicht regel-detail"
+            hidden
+        >
+            <button type="button" class="zurueck-button" data-rule-back>
+                ← Zurück zur Auswahl
+            </button>
+
+            <article class="regel-card regel-detail-card">
+                <h3>§3 Crime und Konflikte</h3>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§3.1 Verhältnismäßigkeit</h4>
+                    <p>
+                        Kriminelle Handlungen benötigen einen nachvollziehbaren
+                        RP-Hintergrund. Kleine Streitigkeiten oder Beleidigungen
+                        rechtfertigen keine extreme Gewalt.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§3.2 Einsatz von Schusswaffen</h4>
+                    <p>
+                        Eine Schusswaffe ist immer das letzte Mittel. Konflikte
+                        sollen nach Möglichkeit zunächst verbal und durch
+                        hochwertiges Roleplay gelöst werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§3.3 Überfälle</h4>
+                    <ul>
+                        <li>Ein Überfall darf ab 5 Polizisten im Dienst begonnen werden.</li>
+                        <li>Zwischen zwei Überfällen derselben Partei liegen mindestens 60 Minuten.</li>
+                        <li>Ein begonnener Überfall muss vollständig ausgespielt werden.</li>
+                        <li>Schusswaffen dürfen nicht ohne triftigen Grund sofort eingesetzt werden.</li>
+                    </ul>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§3.4 Geiselnahmen</h4>
+                    <ul>
+                        <li>Es dürfen maximal 5 Geiseln gleichzeitig genommen werden.</li>
+                        <li>Fake-Geiseln und freiwillige Geiseln sind verboten.</li>
+                        <li>Geiseln müssen aktiv in das Roleplay einbezogen werden.</li>
+                        <li>Unnötig langes Festhalten ohne aktives RP ist verboten.</li>
+                        <li>Das Leben einer Geisel muss ernst genommen werden.</li>
+                    </ul>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§3.5 Forderungen und Lösegeld</h4>
+                    <p>
+                        Pro Geisel dürfen maximal 10.000 $ Lösegeld oder eine
+                        angemessene Waffe im vergleichbaren Wert gefordert werden.
+                    </p>
+                    <p>
+                        Unmögliche oder offensichtlich übertriebene Forderungen
+                        sind nicht zulässig. Verhandlungen sollen allen Parteien
+                        spielbares Roleplay ermöglichen.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§3.6 Überfälle auf Spieler</h4>
+                    <p>
+                        Spieler dürfen nicht grundlos ausgeraubt werden. Der
+                        alleinige Wunsch nach Geld oder Ausrüstung ist kein
+                        ausreichender RP-Hintergrund.
+                    </p>
+                    <p>
+                        Spieler dürfen nicht gezwungen werden, ihr vollständiges
+                        Bankkonto zu leeren oder große Geldbeträge zu überweisen.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§3.7 Bewusstlose Personen und Beute</h4>
+                    <p>
+                        Bewusstlose Personen dürfen nur durchsucht werden, wenn
+                        man direkt an der dazugehörigen RP-Situation beteiligt war.
+                    </p>
+                    <p>
+                        Während einer noch aktiven Schießerei darf nicht geplündert
+                        werden. Unbeteiligte dürfen aufgefundene bewusstlose
+                        Personen nicht ausrauben.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§3.8 Safezones</h4>
+                    <p>Folgende Bereiche gelten als Safezones:</p>
+                    <ul>
+                        <li>Medical Department beziehungsweise Krankenhaus</li>
+                        <li>Würfelpark</li>
+                        <li>alle Kleidungsläden</li>
+                        <li>alle Clubs</li>
+                        <li>alle Werkstätten</li>
+                        <li>alle legalen Farming-Routen</li>
+                        <li>Sammler, Verarbeiter und Verkäufer legaler Waren</li>
+                    </ul>
+                    <p>
+                        Gewalt, Bedrohungen, Überfälle, Geiselnahmen,
+                        Schusswaffengebrauch, Fahrzeugdiebstahl und Provokationen
+                        sind in Safezones verboten.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§3.9 Flucht in eine Safezone</h4>
+                    <p>
+                        Eine Safezone darf nicht zur Flucht aus einer bereits
+                        begonnenen RP-Situation benutzt werden. Eine aktive
+                        Situation darf außerhalb der Safezone weitergeführt werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§3.10 Deadzone – Army-Gelände</h4>
+                    <p>
+                        Das vollständig gekennzeichnete Army-Gelände gilt als
+                        Deadzone. Das Betreten erfolgt auf eigene Gefahr.
+                    </p>
+                    <ul>
+                        <li>Eine vorherige Schussankündigung ist innerhalb der Deadzone nicht erforderlich.</li>
+                        <li>Unbefugte Eindringlinge dürfen bekämpft werden.</li>
+                        <li>Das Campen an Ein- und Ausgängen ist verboten.</li>
+                        <li>Die Deadzone darf nicht für Trolling missbraucht werden.</li>
+                        <li>Außerhalb der gekennzeichneten Grenze gelten die normalen Regeln.</li>
+                    </ul>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§3.11 Sperrzonen – illegale Routen</h4>
+                    <p>
+                        Illegale Sammler, Verarbeiter und Verkäufer gelten als
+                        gefährliche Sperrzonen, jedoch nicht als automatische
+                        Deadzones.
+                    </p>
+                    <ul>
+                        <li>Fremde Personen müssen zunächst deutlich gewarnt werden.</li>
+                        <li>Es muss ausreichend Zeit zum Verlassen des Gebietes gegeben werden.</li>
+                        <li>Erst bei Verweigerung oder Bedrohung darf die Situation eskalieren.</li>
+                        <li>Dauerhaftes Campen zum wahllosen Ausrauben ist verboten.</li>
+                    </ul>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§3.12 Schutz des Spielspaßes</h4>
+                    <p>
+                        Crime-RP soll für alle Beteiligten eine spielbare und
+                        interessante Situation schaffen. Erniedrigung, unnötiges
+                        Festhalten und das absichtliche Zerstören des Spielspaßes
+                        sind verboten.
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <!-- §4 Fahrzeuge -->
+        <div
+            id="regel-fahrzeuge"
+            class="regel-ansicht regel-detail"
+            hidden
+        >
+            <button type="button" class="zurueck-button" data-rule-back>
+                ← Zurück zur Auswahl
+            </button>
+
+            <article class="regel-card regel-detail-card">
+                <h3>§4 Fahrzeuge und Verfolgungen</h3>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§4.1 Realistisches Fahren</h4>
+                    <p>
+                        Fahrzeuge müssen entsprechend ihrer Bauart, ihres
+                        Zustandes und der Verkehrssituation realistisch gefahren
+                        werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§4.2 Unfälle und Verletzungen</h4>
+                    <p>
+                        Schwere Unfälle müssen ausgespielt werden. Nach einem
+                        heftigen Aufprall darf nicht ohne Reaktion normal
+                        weitergefahren werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§4.3 Fahrzeugschäden</h4>
+                    <p>
+                        Stark beschädigte Fahrzeuge, Fahrzeuge mit schweren
+                        Motorschäden oder mehreren zerstörten Reifen dürfen nicht
+                        unbegrenzt weitergefahren werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§4.4 Offroad-Fahren</h4>
+                    <p>
+                        Offroad-Fahrten sind nur mit dafür geeigneten Fahrzeugen
+                        zulässig. Sportwagen und tiefergelegte Fahrzeuge dürfen
+                        nicht unrealistisch durch Gelände gefahren werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§4.5 Stunts</h4>
+                    <p>
+                        Unrealistische Sprünge, absichtliche Überschläge und
+                        extreme Fahrmanöver ohne RP-Hintergrund sind verboten.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§4.6 Rammen und PIT-Manöver</h4>
+                    <p>
+                        Absichtliches Rammen benötigt einen nachvollziehbaren
+                        Grund und muss verhältnismäßig bleiben.
+                    </p>
+                    <p>
+                        PIT-Manöver dürfen nicht mit unrealistisch hoher
+                        Geschwindigkeit oder an offensichtlich tödlichen Stellen
+                        durchgeführt werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§4.7 Fahrzeug als Waffe</h4>
+                    <p>
+                        Absichtliches Überfahren von Personen ist verboten.
+                        Ausnahmen bestehen nur in einer unmittelbaren
+                        lebensbedrohlichen Situation ohne andere Fluchtmöglichkeit.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§4.8 Verfolgungsjagden</h4>
+                    <p>
+                        Verfolgungen müssen realistisch und fair ausgespielt
+                        werden. Eine längere, spannende Verfolgung ist einer
+                        sofortigen Schießerei vorzuziehen.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§4.9 Garagen und Fahrzeugwechsel</h4>
+                    <p>
+                        Während einer aktiven Verfolgung dürfen Fahrzeuge nicht
+                        eingeparkt, ausgetauscht oder durch eine Garage versteckt
+                        werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§4.10 Reparaturen</h4>
+                    <p>
+                        Fahrzeuge dürfen während einer Verfolgung, Schießerei
+                        oder unmittelbaren Gefahrensituation nicht repariert werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§4.11 Fahrzeugdiebstahl</h4>
+                    <p>
+                        Fahrzeuge dürfen nur mit nachvollziehbarem RP-Hintergrund
+                        gestohlen werden. Grundloses Stehlen zum Zeitvertreib ist
+                        verboten.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§4.12 Dienstfahrzeuge</h4>
+                    <p>
+                        Fahrzeuge von Polizei, Rettungsdienst und anderen
+                        staatlichen Einrichtungen dürfen nur mit ernsthaftem
+                        RP-Hintergrund entwendet werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§4.13 Parken und Blockieren</h4>
+                    <p>
+                        Straßen, Einfahrten, Garagen und Einsatzorte dürfen nicht
+                        grundlos blockiert werden. Fahrzeuge sind möglichst
+                        realistisch abzustellen.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§4.14 Luft- und Wasserfahrzeuge</h4>
+                    <p>
+                        Flugzeuge, Hubschrauber und Boote müssen realistisch und
+                        ihrem vorgesehenen Verwendungszweck entsprechend genutzt
+                        werden.
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <!-- §5 Fraktionen -->
+        <div
+            id="regel-fraktionen"
+            class="regel-ansicht regel-detail"
+            hidden
+        >
+            <button type="button" class="zurueck-button" data-rule-back>
+                ← Zurück zur Auswahl
+            </button>
+
+            <article class="regel-card regel-detail-card">
+                <h3>§5 Fraktionen und Berufe</h3>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§5.1 Zivile Gruppierungen</h4>
+                    <p>
+                        Zivile Gruppen dürfen mit maximal 8 Personen gemeinsam
+                        handeln. Größere dauerhafte Gruppen müssen als Fraktion
+                        angemeldet werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§5.2 Fraktionsgröße</h4>
+                    <p>
+                        Eine Fraktion darf aus maximal 30 aktiven Mitgliedern und
+                        5 Reservemitgliedern bestehen.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§5.3 Teilnehmer bei Aktionen</h4>
+                    <p>
+                        Bei einer gemeinsamen Fraktionsaktion dürfen maximal
+                        30 Mitglieder derselben Fraktion teilnehmen.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§5.4 Erkennbarkeit</h4>
+                    <p>
+                        Fraktionsmitglieder müssen bei gemeinsamen Aktionen durch
+                        mindestens drei übereinstimmende Merkmale erkennbar sein.
+                    </p>
+                    <p>
+                        Als Merkmale gelten Hose, Oberteil, Schuhe und Maske.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§5.5 Fraktionsangriffe</h4>
+                    <p>
+                        Ein Angriff auf eine Fraktion benötigt einen ernsthaften
+                        und nachvollziehbaren RP-Hintergrund. Kleine Streitigkeiten,
+                        Beleidigungen oder einzelne Verkehrsunfälle reichen nicht
+                        aus.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§5.6 Verhältnismäßigkeit</h4>
+                    <p>
+                        Eine deutlich unterlegene Partei darf nicht gezielt
+                        überrannt werden. Beide Seiten müssen eine realistische
+                        Handlungsmöglichkeit behalten.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§5.7 Ruhezeit</h4>
+                    <p>
+                        Nach einem abgeschlossenen Großangriff gilt für denselben
+                        Konflikt eine Ruhezeit von 24 Stunden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§5.8 Drittparteien</h4>
+                    <p>
+                        Drittparteien dürfen sich nicht in Fraktionskonflikte
+                        einmischen.
+                    </p>
+                    <p>
+                        Eine Ausnahme besteht nur, wenn die Beteiligung vorab in
+                        einem offiziellen Fraktionsgespräch vereinbart wurde.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§5.9 Safezones und Spawnpunkte</h4>
+                    <p>
+                        Fraktionsangriffe in Safezones sind verboten. Eingänge,
+                        Ausgänge und Spawnpunkte dürfen nicht dauerhaft belagert
+                        werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§5.10 Rettungskräfte</h4>
+                    <p>
+                        Rettungskräfte sind während ihrer neutralen Dienstausübung
+                        besonders geschützt und dürfen nicht grundlos bedroht,
+                        entführt oder angegriffen werden.
+                    </p>
+                    <p>
+                        Dieser Schutz entfällt, wenn sich eine Rettungskraft
+                        freiwillig und aktiv an einem Konflikt beteiligt.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§5.11 Verkehrskontrollen</h4>
+                    <p>
+                        Bei einer gewöhnlichen Verkehrskontrolle muss zunächst
+                        Roleplay stattfinden. Eine Kontrolle allein ist kein
+                        ausreichender Grund, sofort auf Beamte zu schießen.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§5.12 Dienstfahrzeuge und Ausrüstung</h4>
+                    <p>
+                        Dienstfahrzeuge, Dienstwaffen und medizinische Ausrüstung
+                        dürfen nicht grundlos zur eigenen Bereicherung gestohlen
+                        werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§5.13 Legale Berufe</h4>
+                    <p>
+                        Spieler in legalen Berufen dürfen nicht gezielt beim
+                        Ausüben ihrer Tätigkeit gestört oder ohne RP-Hintergrund
+                        ausgeraubt werden.
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <!-- §6 Support und Technik -->
+        <div
+            id="regel-support"
+            class="regel-ansicht regel-detail"
+            hidden
+        >
+            <button type="button" class="zurueck-button" data-rule-back>
+                ← Zurück zur Auswahl
+            </button>
+
+            <article class="regel-card regel-detail-card">
+                <h3>§6 Support und Technik</h3>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§6.1 Erst ausspielen, dann melden</h4>
+                    <p>
+                        Eine RP-Situation wird grundsätzlich zuerst beendet und
+                        anschließend im Support gemeldet.
+                    </p>
+                    <p>
+                        Ausnahmen sind schwere technische Probleme, verbotene
+                        Inhalte oder eine unmittelbare persönliche Gefährdung.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§6.2 Verhalten im Support</h4>
+                    <p>
+                        Alle Beteiligten müssen ruhig, respektvoll und
+                        wahrheitsgemäß bleiben. Beleidigungen, Anschreien und
+                        absichtliche Falschaussagen sind verboten.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§6.3 Beweismaterial</h4>
+                    <p>
+                        Für Beschwerden sollte eine vollständige Videoaufnahme
+                        vorhanden sein. Der Clip muss die relevante Zeit vor,
+                        während und nach der Situation zeigen.
+                    </p>
+                    <p>
+                        Manipulierte oder absichtlich verkürzte Aufnahmen können
+                        abgelehnt werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§6.4 Verwarnungen und Sanktionen</h4>
+                    <p>
+                        Sanktionen richten sich nach Schwere, Häufigkeit und
+                        Absicht des Verstoßes. Wiederholte Verstöße können zu
+                        längeren oder permanenten Ausschlüssen führen.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§6.5 Bannumgehung</h4>
+                    <p>
+                        Das Umgehen eines Ausschlusses durch weitere Accounts
+                        oder technische Mittel führt zu einer Verschärfung der
+                        Sanktion.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§6.6 Cheating und unerlaubte Programme</h4>
+                    <p>
+                        Cheats, Mod-Menüs, Makros, externe Zielhilfen und
+                        Programme, die einen unfairen Vorteil verschaffen, sind
+                        strengstens verboten.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§6.7 Grafikmods und Crosshair</h4>
+                    <p>
+                        Das normale GTA-/FiveM-Crosshair ist erlaubt. Externe
+                        Crosshair-Overlays sind verboten.
+                    </p>
+                    <p>
+                        Grafikmods sind nur zulässig, wenn sie keinen spielerischen
+                        Vorteil bieten. No-Water, No-Props, No-Fog, auffällige
+                        Tracer und ähnliche Veränderungen sind verboten.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§6.8 Bugusing</h4>
+                    <p>
+                        Spielfehler dürfen nicht zum eigenen Vorteil ausgenutzt
+                        werden. Das Duplizieren von Geld, Fahrzeugen, Waffen oder
+                        Gegenständen ist strengstens verboten.
+                    </p>
+                    <p>
+                        Fehler müssen dem Team unverzüglich gemeldet werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§6.9 Server-Restarts</h4>
+                    <p>
+                        Kurz vor einem angekündigten Neustart dürfen keine großen
+                        Situationen mehr begonnen werden.
+                    </p>
+                    <p>
+                        Eine laufende Situation wird nach dem Neustart an derselben
+                        Stelle sinngemäß fortgesetzt.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§6.10 Erstattungen</h4>
+                    <p>
+                        Verlorene Gegenstände werden nur nach Teamprüfung und mit
+                        einem nachvollziehbaren Videobeweis erstattet.
+                    </p>
+                    <p>
+                        Aussagen anderer Spieler allein gelten nicht automatisch
+                        als ausreichender Beweis.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§6.11 Support und IC-Rache</h4>
+                    <p>
+                        Ein Supportfall darf nicht für Rache oder Benachteiligung
+                        im Roleplay verwendet werden.
+                    </p>
+                </div>
+
+                <div class="regel-unterabschnitt">
+                    <h4>§6.12 Entscheidungen des Serverteams</h4>
+                    <p>
+                        Das Serverteam kann Situationen individuell bewerten.
+                        Bei besonders schweren oder nicht ausdrücklich genannten
+                        Fällen kann es angemessene Maßnahmen ergreifen.
+                    </p>
+                </div>
+            </article>
+        </div>
+
     </div>
 </section>
+<!-- Diesen vollständigen Abschnitt ersetzt du in der index.html -->
+<section id="fraktionsregelwerk" class="page-section regelwerk" hidden>
+    <div class="regelwerk-container">
+        <h2>Fraktionsregelwerk</h2>
 
+        <p class="regelwerk-intro">
+            Dieses Regelwerk ergänzt das allgemeine Regelwerk und gilt für alle
+            offiziellen, staatlichen, legalen und illegalen Fraktionen von
+            Frost Island RP. Fairness und glaubwürdiges Roleplay stehen immer
+            über dem Gewinnen einer Situation.
+        </p>
+
+        <article class="regel-card regel-detail-card">
+            <h3>§1 Grundlagen und Organisation</h3>
+
+            <div class="regel-unterabschnitt">
+                <h4>§1.1 Geltungsbereich</h4>
+                <p>
+                    Jedes Fraktionsmitglied muss das allgemeine Regelwerk und
+                    dieses Fraktionsregelwerk kennen. Unwissenheit schützt nicht
+                    vor Sanktionen. Die Fraktionsleitung trägt eine besondere
+                    Verantwortung für das Verhalten ihrer Mitglieder.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§1.2 Fraktions-RP</h4>
+                <p>
+                    Eine Fraktion muss ihrem Konzept entsprechend auftreten.
+                    Staatliche Einrichtungen, Unternehmen, Gangs und andere
+                    Gruppierungen müssen ihre jeweilige Rolle glaubwürdig und
+                    dauerhaft ausspielen. Reines Schieß- oder Provokations-RP
+                    ist kein Fraktionskonzept.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§1.3 Fraktionsgröße</h4>
+                <p>
+                    Eine Fraktion darf aus maximal 30 aktiven Mitgliedern und
+                    5 Reservemitgliedern bestehen. Bei gemeinsamen Aktionen
+                    dürfen höchstens 30 Mitglieder derselben Fraktion handeln.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§1.4 Zivile Gruppierungen</h4>
+                <p>
+                    Nicht angemeldete zivile Gruppen dürfen mit maximal
+                    6 Personen gemeinsam handeln. Größere oder dauerhaft
+                    organisierte Gruppen müssen als Fraktion angemeldet werden.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§1.5 Einheitliche Erkennbarkeit</h4>
+                <p>
+                    Bei Fraktionsaktionen müssen Mitglieder durch mindestens
+                    drei übereinstimmende Merkmale eindeutig erkennbar sein.
+                    Als Merkmale gelten Hose, Oberteil, Schuhe und Maske.
+                    Verwechslungsgefahr mit anderen Fraktionen ist zu vermeiden.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§1.6 Fraktionsleitung</h4>
+                <p>
+                    Die Leitung ist für Mitgliederlisten, interne Regeln,
+                    Fraktionseigentum und ein angemessenes Auftreten zuständig.
+                    Sie muss Regelverstöße innerhalb der Fraktion aufarbeiten
+                    und Anweisungen der Fraktionsverwaltung umsetzen.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§1.7 Beitritt, Austritt und Wechsel</h4>
+                <p>
+                    Beitritte und Austritte müssen im Roleplay nachvollziehbar
+                    ausgespielt werden. Ein Wechsel darf nicht genutzt werden,
+                    um einem laufenden Konflikt, einer Schuld oder einer Sanktion
+                    zu entkommen. Die Fraktionsverwaltung kann nach einem
+                    Austritt eine angemessene Wechselsperre festlegen.
+                </p>
+            </div>
+        </article>
+
+        <article class="regel-card regel-detail-card">
+            <h3>§2 Fraktionskonflikte und Aktionen</h3>
+
+            <div class="regel-unterabschnitt">
+                <h4>§2.1 Ernsthafter RP-Grund</h4>
+                <p>
+                    Ein Angriff auf eine Fraktion benötigt einen ernsthaften,
+                    aktuellen und nachvollziehbaren RP-Hintergrund. Einzelne
+                    Beleidigungen, kleine Verkehrsunfälle oder die bloße Suche
+                    nach einem Schusswechsel reichen nicht aus.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§2.2 Verhältnismäßigkeit</h4>
+                <p>
+                    Angriffe müssen fair und realistisch bleiben. Eine eindeutig
+                    unterlegene Partei darf nicht gezielt überrannt werden.
+                    Beide Seiten müssen eine echte Möglichkeit haben, zu
+                    reagieren, zu verhandeln oder sich zurückzuziehen.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§2.3 Schussankündigung</h4>
+                <p>
+                    Auch bei Fraktionskonflikten gelten die allgemeinen Regeln
+                    zur Schussankündigung: Sie ist 15 Minuten gültig und der
+                    Gegenpartei müssen mindestens 3 Sekunden Reaktionszeit
+                    eingeräumt werden. Schusswaffen bleiben das letzte Mittel.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§2.4 Drittparteien</h4>
+                <p>
+                    Eine dritte Fraktion oder zivile Gruppe darf sich nicht in
+                    einen bestehenden Konflikt einmischen. Eine Ausnahme ist nur
+                    zulässig, wenn die Beteiligung vor Beginn der Situation in
+                    einem offiziellen Fraktionsgespräch eindeutig vereinbart und
+                    genehmigt wurde.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§2.5 Verstärkung</h4>
+                <p>
+                    Nach Beginn einer Aktion dürfen keine außenstehenden Spieler
+                    oder nachträglich zusammengestellten Gruppen als Verstärkung
+                    hinzukommen. Beteiligte müssen vor Beginn der Aktion zur
+                    jeweiligen Partei gehört haben.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§2.6 Safezones und Spawnpunkte</h4>
+                <p>
+                    Fraktionsangriffe in Safezones sind verboten. Eingänge,
+                    Ausgänge, Garagen und Spawnpunkte dürfen nicht dauerhaft
+                    belagert werden. Eine laufende Situation darf nicht absichtlich
+                    in eine Safezone verlagert werden.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§2.7 Anwesen und Fraktionsgelände</h4>
+                <p>
+                    Das Betreten oder Angreifen eines Fraktionsanwesens benötigt
+                    einen klaren RP-Grund. Trolling, Ausspähen ohne Zusammenhang
+                    und wiederholtes Vorbeifahren zum Provozieren sind verboten.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§2.8 Ruhezeit</h4>
+                <p>
+                    Nach einem abgeschlossenen Großangriff gilt für denselben
+                    Konflikt eine Ruhezeit von 24 Stunden. Währenddessen dürfen
+                    keine Racheangriffe oder künstlich fortgesetzten Gefechte
+                    stattfinden.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§2.9 Forderungen und Ultimaten</h4>
+                <p>
+                    Forderungen müssen realistisch, erfüllbar und durch den
+                    RP-Strang begründet sein. Eine Forderung darf nicht allein
+                    dazu dienen, die andere Fraktion wirtschaftlich zu zerstören
+                    oder einen sicheren Schusswechsel zu erzwingen.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§2.10 Konfliktende</h4>
+                <p>
+                    Ein Konflikt endet durch eine ausgespielte Einigung, einen
+                    Rückzug oder eine Entscheidung der Fraktionsverwaltung.
+                    Supportfälle dürfen nicht als IC-Grund für weitere Rache oder
+                    neue Forderungen verwendet werden.
+                </p>
+            </div>
+        </article>
+
+        <article class="regel-card regel-detail-card">
+            <h3>§3 Illegale Fraktionen</h3>
+
+            <div class="regel-unterabschnitt">
+                <h4>§3.1 Crime-RP</h4>
+                <p>
+                    Illegale Fraktionen müssen langfristiges und glaubwürdiges
+                    Crime-RP spielen. Wahllose Überfälle, dauerhaftes Provozieren
+                    und ein ausschließlicher Fokus auf Schießereien sind verboten.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§3.2 Überfälle und Geiselnahmen</h4>
+                <p>
+                    Für Fraktionen gelten die allgemeinen Überfallregeln. Ein
+                    Überfall ist ab 5 Polizisten erlaubt. Es dürfen maximal
+                    5 Geiseln genommen werden; Fake-Geiseln sind verboten.
+                    Zwischen zwei Überfällen liegt mindestens eine Stunde.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§3.3 Lösegeld</h4>
+                <p>
+                    Pro Geisel dürfen höchstens 10.000 Dollar oder eine Waffe
+                    vergleichbaren Wertes verlangt werden. Forderungen müssen
+                    verhältnismäßig bleiben und Teil eines ausgespielten
+                    Verhandlungsszenarios sein.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§3.4 Illegale Routen</h4>
+                <p>
+                    Wissen über illegale Sammler, Verarbeiter und Verkäufer muss
+                    im Roleplay erlangt werden. Metagaming oder erzwungene
+                    Informationen begründen keinen Anspruch auf eine Route.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§3.5 Routenkonflikte</h4>
+                <p>
+                    Routenkonflikte müssen verhältnismäßig und ohne Drittparteien
+                    ausgetragen werden. Illegale Routen gelten als Sperrzonen,
+                    aber nicht automatisch als Deadzones. Vor Gewalt muss eine
+                    klare Warnung mit angemessener Zeit zum Verlassen erfolgen.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§3.6 Deadzone</h4>
+                <p>
+                    Das Army-Gelände ist eine Deadzone. Dort kann ohne vorherige
+                    Schussankündigung geschossen werden, dennoch ist ein
+                    nachvollziehbarer RP-Grund erforderlich. Eingänge dürfen
+                    nicht zum Campen oder Trollen genutzt werden.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§3.7 Fraktionseigentum</h4>
+                <p>
+                    Gemeinsame Waffen, Gegenstände, Fahrzeuge und Gelder gehören
+                    in den vorgesehenen Fraktionsbestand. Das Leerräumen beim
+                    Austritt, vor einer Razzia oder vor einer Auflösung ist
+                    verboten.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§3.8 Bündnisse</h4>
+                <p>
+                    Dauerhafte Bündnisse müssen der Fraktionsverwaltung gemeldet
+                    und im RP begründet werden. Ein Bündnis hebt das Verbot von
+                    Drittparteien nicht automatisch auf. Während eines laufenden
+                    Konflikts darf kein Zweckbündnis geschlossen werden.
+                </p>
+            </div>
+        </article>
+
+        <article class="regel-card regel-detail-card">
+            <h3>§4 Staatliche und legale Fraktionen</h3>
+
+            <div class="regel-unterabschnitt">
+                <h4>§4.1 Vorbildfunktion</h4>
+                <p>
+                    Polizei, Rettungsdienst, Justiz, Werkstätten und andere
+                    offizielle Betriebe müssen ihrem Aufgabenbereich entsprechend
+                    handeln. Dienstrechte dürfen nicht zur privaten Bereicherung
+                    oder zur unnötigen Eskalation genutzt werden.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§4.2 Polizei-RP</h4>
+                <p>
+                    Polizeiliche Maßnahmen müssen nachvollziehbar und
+                    verhältnismäßig sein. Verkehrskontrollen sind zunächst
+                    auszuspielen; eine gewöhnliche Kontrolle ist kein Grund für
+                    einen sofortigen Schusswaffeneinsatz.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§4.3 Cop-Baiting</h4>
+                <p>
+                    Das absichtliche Provozieren staatlicher Fraktionen ohne
+                    RP-Grund ist verboten. Dazu gehören grundlose Schüsse vor
+                    Dienststellen, wiederholtes Vorbeifahren und provozierende
+                    Verkehrsverstöße nur zum Starten einer Verfolgung.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§4.4 Razzien und Durchsuchungen</h4>
+                <p>
+                    Razzien benötigen ausreichende IC-Beweise und müssen von
+                    einer zuständigen Führungsperson verantwortet werden.
+                    Durchsuchungen und Beschlagnahmungen müssen verhältnismäßig
+                    bleiben und dürfen nicht der vollständigen wirtschaftlichen
+                    Zerstörung einer Fraktion dienen.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§4.5 Rettungskräfte</h4>
+                <p>
+                    Rettungskräfte sind während ihrer neutralen Dienstausübung
+                    geschützt. Sie dürfen nicht grundlos bedroht, entführt oder
+                    angegriffen werden. Der Schutz entfällt, wenn sie freiwillig
+                    aktiv Partei in einem Konflikt ergreifen.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§4.6 Medic-RP</h4>
+                <p>
+                    Medizinische Behandlungen und Anweisungen müssen glaubwürdig
+                    ausgespielt werden. Nach schweren Verletzungen darf eine
+                    Behandlung nicht abgebrochen werden, nur um sofort wieder an
+                    einer Aktion teilzunehmen.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§4.7 Dienstfahrzeuge und Ausrüstung</h4>
+                <p>
+                    Dienstfahrzeuge, Dienstwaffen und medizinische Ausrüstung
+                    dürfen nicht ohne ernsthaften RP-Grund gestohlen, weitergegeben
+                    oder privat genutzt werden. Dienstmaterial ist nach dem
+                    Austritt vollständig zurückzugeben.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§4.8 Korruption</h4>
+                <p>
+                    Korruptions-RP in staatlichen oder legalen Fraktionen ist nur
+                    nach ausdrücklicher Genehmigung der zuständigen Verwaltung
+                    erlaubt. Spontane Korruption ohne genehmigtes Konzept ist
+                    verboten.
+                </p>
+            </div>
+        </article>
+
+        <article class="regel-card regel-detail-card">
+            <h3>§5 Blood-In, Blood-Out und Charaktertod</h3>
+
+            <div class="regel-unterabschnitt">
+                <h4>§5.1 Blood-In</h4>
+                <p>
+                    Die Aufnahme in eine illegale Fraktion muss als erkennbare
+                    RP-Situation ausgespielt werden. Mit dem Beitritt akzeptiert
+                    das Mitglied die internen, regelkonformen Konsequenzen eines
+                    späteren Austritts.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§5.2 Normaler Blood-Out</h4>
+                <p>
+                    Ein Blood-Out benötigt einen nachvollziehbaren RP-Grund und
+                    muss klar kommuniziert werden. Danach vergisst die betroffene
+                    Person fraktionsinterne Informationen, Absprachen, Standorte
+                    und illegale Kenntnisse der ehemaligen Fraktion.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§5.3 Hard-Blood-Out</h4>
+                <p>
+                    Ein dauerhafter Charaktertod darf nur mit Zustimmung der
+                    betroffenen Person und vorheriger Genehmigung des Serverteams
+                    stattfinden. Ohne diese Voraussetzungen gilt die Situation
+                    lediglich als normaler Blood-Out.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§5.4 Erinnerung und Rache</h4>
+                <p>
+                    Nach einem Blood-Out dürfen vergessene Informationen nicht
+                    über Freunde, Notizen oder andere Umwege zurückgeholt werden.
+                    Rachehandlungen gegen die ehemalige Fraktion auf Grundlage
+                    dieser Erinnerungen sind verboten.
+                </p>
+            </div>
+        </article>
+
+        <article class="regel-card regel-detail-card">
+            <h3>§6 Fraktionsverwaltung und Sanktionen</h3>
+
+            <div class="regel-unterabschnitt">
+                <h4>§6.1 Konfliktklärung</h4>
+                <p>
+                    Konflikte sollen zuerst im RP und anschließend sachlich
+                    zwischen den Fraktionsleitungen geklärt werden. Die
+                    Fraktionsverwaltung greift ein, wenn keine faire Lösung
+                    erreicht wird oder ein Regelverstoß vorliegt.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§6.2 Erst ausspielen, dann melden</h4>
+                <p>
+                    Eine laufende Situation wird vollständig ausgespielt. Erst
+                    danach darf der Support eingeschaltet werden. Ausnahmen gelten
+                    nur bei akuter technischer Gefahr oder besonders schweren
+                    Verstößen, die nicht weiter ausgespielt werden können.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§6.3 Beweispflicht</h4>
+                <p>
+                    Beschwerden benötigen aussagekräftiges Videomaterial mit Bild
+                    und Ton. Clips sollen den notwendigen Zusammenhang vor und
+                    nach dem gemeldeten Ereignis zeigen.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§6.4 Fraktionsverwarnungen</h4>
+                <p>
+                    Sind mehrere Mitglieder oder die Leitung an einem Verstoß
+                    beteiligt, kann die gesamte Fraktion verwarnt werden.
+                    Wiederholte oder schwere Verstöße können Einschränkungen,
+                    Leitungswechsel oder die Auflösung der Fraktion nach sich
+                    ziehen.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§6.5 Informationspflicht</h4>
+                <p>
+                    Änderungen an Leitung, Mitgliederzahl, Konzept oder Status
+                    müssen der Fraktionsverwaltung zeitnah gemeldet werden.
+                    Bewusst falsche oder verschwiegene Angaben können sanktioniert
+                    werden.
+                </p>
+            </div>
+
+            <div class="regel-unterabschnitt">
+                <h4>§6.6 Hausrecht und Einzelfallentscheidung</h4>
+                <p>
+                    Die Server- und Fraktionsverwaltung darf bei nicht eindeutig
+                    geregelten Fällen im Sinne von Fairness, Spielspaß und
+                    glaubwürdigem Roleplay entscheiden. Das Ausnutzen vermeintlicher
+                    Regelungslücken ist verboten.
+                </p>
+            </div>
+        </article>
+    </div>
+</section>
+<section id="serverinhaber"
+         class="page-section owner-page"
+         hidden>
+
+    <div class="owner-container">
+        <p class="owner-label">Frost Island RP</p>
+        <h2>Serverinhaber</h2>
+
+        <p class="owner-intro">
+            Die Köpfe hinter Frost Island RP
+        </p>
+
+        <div class="owner-grid">
+            <article class="owner-card">
+                <div class="owner-crown">♛</div>
+                <p class="owner-position">Serverinhaber</p>
+                <h3>Leonardo</h3>
+                <div class="owner-line"></div>
+                <p class="owner-description">
+                    Leitung und Verwaltung von Frost Island RP
+                </p>
+            </article>
+
+            <article class="owner-card">
+                <div class="owner-crown">♛</div>
+                <p class="owner-position">Serverinhaber</p>
+                <h3>Hamid</h3>
+                <div class="owner-line"></div>
+                <p class="owner-description">
+                    Leitung und Verwaltung von Frost Island RP
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+</main>
 <script src="script.js"></script>
 
 </body>
