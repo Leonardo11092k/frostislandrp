@@ -64,7 +64,12 @@ function openPage(pageId, updateHistory = true) {
             link.dataset.page === pageId
         );
     });
-
+const backgrounds = {
+    home: "Background-image.png",
+   regelwerk: "regelwerk-bg.png",
+    fraktionsregelwerk: "fraktion.png",
+    serverinhaber: "Inhaber.png"
+};
    const titles = {
     home: "Frost Island RP",
     regelwerk: "Regelwerk | Frost Island RP",
@@ -75,7 +80,14 @@ function openPage(pageId, updateHistory = true) {
 };
 
     document.title = titles[pageId];
+    const backgroundFile = backgrounds[pageId];
 
+console.log("Seite:", pageId);
+console.log("Hintergrund:", backgroundFile);
+
+if (backgroundFile) {
+document.body.style.backgroundImage = `linear-gradient(#0003,#0003),url("./assets/${backgroundFile}")`;
+}
     if (
         updateHistory &&
         window.location.hash !== `#${pageId}`
