@@ -20,13 +20,11 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     color:white;
     background-color:#07182a;
-    background-image:
-        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
-        url("./assets/Background-image.png");
+    background-image: none;
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
-    background-attachment:scroll;
+    background-attachment:fixed;
     overflow-x:hidden;
 }
 
